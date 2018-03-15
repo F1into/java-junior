@@ -1,6 +1,5 @@
 package com.acme.edu;
 
-import com.acme.edu.formatter.FormatVisitor;
 import com.acme.edu.formatter.PrefixFormatter;
 import com.acme.edu.message.Message;
 
