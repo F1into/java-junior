@@ -8,6 +8,14 @@ public class MultiClientServer {
         Thread connectionLoop = new Thread(new ServerAcceptor());
 
         connectionLoop.start();
+
+        // wait stop from admin
+
+        // ctrl + c
+        Runtime.getRuntime().addShutdownHook(
+                new Thread(connectionLoop::interrupt)
+        );
+
     }
 
 }
